@@ -14,7 +14,7 @@
             img {
                 width: 456px;
                 height: 67px;
-                margin-top: 210px;
+                margin-top: 110px;
                 margin-bottom: 10px;
             }
             a {
@@ -22,23 +22,36 @@
                 color: #3c4581;
             }
             p.strap {
-                margin: 31px auto 100px;
+                margin: 31px auto 190px;
                 font-size: 1.4em;
                 width: 634px;
             }
             p.copy {
-                width: 965px;
-                margin: 0 auto;
-                position: absolute;
-                left: 50%;
-                margin-left: -450px;
-                bottom: 65px;
+                /*width: 965px;*/
+                margin: 35px auto;
+                /*position: absolute;*/
+                /*left: 50%;*/
+                /*margin-left: -450px;*/
+                /*bottom: 65px;*/
             }
         </style>
     </head>
     <body>
-        <a href="https://www.cloud9trader.com"><img src="https://www.cloud9trader.com/0.1.54/images/cloud9trader-logo-large.png" title="cloud9trader" /></a>
-        <p class="strap">A simple, powerful platform for algorithmic trading, complete with a super fast, HTML5 dealer interface.</p>
-        <p class="copy"><a href="http://www.cloud9trader.com">www.cloud9trader.com</a></p>
+        <a href="https://www.cloud9trader.com"><img src="https://www.cloud9trader.com/0/images/cloud9trader.svg" title="cloud9trader" /></a>
+        <p class="strap">Simple, powerful platform for algorithmic trading, complete with a super fast, HTML5 dealer interface.</p>
+        <div style="height: 300px; background-color: red"></div>
+        <script data-c9t-chart>
+        (function(d, w) {
+            var s=d.createElement("script"),e=d.getElementsByTagName("script")[0];
+            s.src="https://www.cloud9trader.com/0/scripts/shared/chart.js";
+            s.async=true;e.parentNode.insertBefore(s,e);w.c9td=w.c9td||[];
+            w.c9td.push({
+                "symbol": "EUR/USD",
+                "interval": 15,
+                "height": 300
+            });
+        })(document, window);
+        </script>
+        <p class="copy"><a href="https://www.cloud9trader.com">www.cloud9trader.com</a></p>
     </body>
 </html>
